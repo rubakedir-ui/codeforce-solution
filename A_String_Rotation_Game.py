@@ -4,13 +4,13 @@ for _ in range(t):
     n = int(input())
     s = input()
 
-    cnt = 0
+    count = 0
 
     for i in range(n):
         if s[i] != s[(i + 1) % n]:
-            cnt += 1
+            count += 1
 
-    if cnt == n:
+    if count == n:
         print(n)
     else:
-        print(cnt + 1)
+        print(count + 1)
